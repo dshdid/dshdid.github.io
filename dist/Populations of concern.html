@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1514e41ab7824e83857d1ab0e38e718b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+                 <h3 align="center" style="font-size:20px"><b>Top 10 Populations of concern to UNHCR by category end 2018</b></h3>
+                            <h4 align="center" style="font-size:15px"><b>Red = <i>IDPs</i>  |||  Yellow = <i>Asylum-seekers (pending cases)</i>  |||  White = <i>Refugees</i></b></h4>
+             
+    
+            <div class="folium-map" id="map_1514e41ab7824e83857d1ab0e38e718b" ></div>
+        
+</body>
+<script>    
+    
+            var map_1514e41ab7824e83857d1ab0e38e718b = L.map(
+                "map_1514e41ab7824e83857d1ab0e38e718b",
+                {
+                    center: [15.0, -11.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f303a8619fb44a5486b40f98547764e0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+            var circle_e62db422654b412181c38c6f432d8cde = L.circle(
+                [4.570868, -74.297333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 781647.2000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_cdcf6335178d4c65a1cb67d3f04c0b0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eda4aa9e9f564c209c7456e626f0032f = $(`<div id="html_eda4aa9e9f564c209c7456e626f0032f" style="width: 100.0%; height: 100.0%;">['Colombia IDPs: 7816472.0']</div>`)[0];
+            popup_cdcf6335178d4c65a1cb67d3f04c0b0c.setContent(html_eda4aa9e9f564c209c7456e626f0032f);
+        
+
+        circle_e62db422654b412181c38c6f432d8cde.bindPopup(popup_cdcf6335178d4c65a1cb67d3f04c0b0c)
+        ;
+
+        
+    
+    
+            var circle_fdb45be099244ae19e22ae73999eb072 = L.circle(
+                [23.684994, 90.35633100000001],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 181327.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_e9586677805e4e69b4d2bce482e39657 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e282d191d724f51a71521aec19970c1 = $(`<div id="html_0e282d191d724f51a71521aec19970c1" style="width: 100.0%; height: 100.0%;">['Bangladesh Refugees: 906635.0']</div>`)[0];
+            popup_e9586677805e4e69b4d2bce482e39657.setContent(html_0e282d191d724f51a71521aec19970c1);
+        
+
+        circle_fdb45be099244ae19e22ae73999eb072.bindPopup(popup_e9586677805e4e69b4d2bce482e39657)
+        ;
+
+        
+    
+    
+            var circle_27f3347a7f5c42db8274c6b91ceefafe = L.circle(
+                [-14.235004, -51.92528],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 105301.3, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_2a4898e24368458d8fc69336504a47c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb1f88a456646d5b326a44ce5480c4d = $(`<div id="html_2bb1f88a456646d5b326a44ce5480c4d" style="width: 100.0%; height: 100.0%;">['Brazil Asylum(pending): 81001.0']</div>`)[0];
+            popup_2a4898e24368458d8fc69336504a47c3.setContent(html_2bb1f88a456646d5b326a44ce5480c4d);
+        
+
+        circle_27f3347a7f5c42db8274c6b91ceefafe.bindPopup(popup_2a4898e24368458d8fc69336504a47c3)
+        ;
+
+        
+    
+    
+            var circle_0be18f3a91a24d83a8c686dc1f4d5093 = L.circle(
+                [34.802075, 38.996815000000005],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 618392.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_640031ba70324542869cfcdce16a539a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b01095f02a5434fb1516c261e728ece = $(`<div id="html_2b01095f02a5434fb1516c261e728ece" style="width: 100.0%; height: 100.0%;">['Syrian Arab Rep. IDPs: 6183920.0']</div>`)[0];
+            popup_640031ba70324542869cfcdce16a539a.setContent(html_2b01095f02a5434fb1516c261e728ece);
+        
+
+        circle_0be18f3a91a24d83a8c686dc1f4d5093.bindPopup(popup_640031ba70324542869cfcdce16a539a)
+        ;
+
+        
+    
+    
+            var circle_dafe1dc5e2ac4f2c9093c680405fbe33 = L.circle(
+                [35.86166, 104.195397],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 64300.4, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_ef1d34f7e2b54a1a991f934a4fb6bd09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7752d1c445143d4b2c6c51191b9d16a = $(`<div id="html_d7752d1c445143d4b2c6c51191b9d16a" style="width: 100.0%; height: 100.0%;">['China Refugees: 321502.0']</div>`)[0];
+            popup_ef1d34f7e2b54a1a991f934a4fb6bd09.setContent(html_d7752d1c445143d4b2c6c51191b9d16a);
+        
+
+        circle_dafe1dc5e2ac4f2c9093c680405fbe33.bindPopup(popup_ef1d34f7e2b54a1a991f934a4fb6bd09)
+        ;
+
+        
+    
+    
+            var circle_a8773aa877e1403183806fac29d58fcf = L.circle(
+                [51.165690999999995, 10.451526],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 208244.4, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_1b06f96055944b18ac9f9b794adc88b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a89365fc0b04a1eaef5eb9c8251d111 = $(`<div id="html_0a89365fc0b04a1eaef5eb9c8251d111" style="width: 100.0%; height: 100.0%;">['Germany Asylum(pending): 160188.0']</div>`)[0];
+            popup_1b06f96055944b18ac9f9b794adc88b6.setContent(html_0a89365fc0b04a1eaef5eb9c8251d111);
+        
+
+        circle_a8773aa877e1403183806fac29d58fcf.bindPopup(popup_1b06f96055944b18ac9f9b794adc88b6)
+        ;
+
+        
+    
+    
+            var circle_77f9d1885ef94fa997657cc5b4bcee4b = L.circle(
+                [5.152149, 46.199616],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 264800.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_087a341696d64549bd2b72b30d6f1ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab2ef89168e54707b220f79a2d473e6e = $(`<div id="html_ab2ef89168e54707b220f79a2d473e6e" style="width: 100.0%; height: 100.0%;">['Somalia IDPs: 2648000.0']</div>`)[0];
+            popup_087a341696d64549bd2b72b30d6f1ef1.setContent(html_ab2ef89168e54707b220f79a2d473e6e);
+        
+
+        circle_77f9d1885ef94fa997657cc5b4bcee4b.bindPopup(popup_087a341696d64549bd2b72b30d6f1ef1)
+        ;
+
+        
+    
+    
+            var circle_dad11a4e5a7948949060adf65bf4ea57 = L.circle(
+                [9.145, 40.489672999999996],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 84427.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_f5eba19f954146a4838d5c077b74ad8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d57ff6834ee446c38d0db0bd9e6b4528 = $(`<div id="html_d57ff6834ee446c38d0db0bd9e6b4528" style="width: 100.0%; height: 100.0%;">['Ethiopia Refugees: 422135.0']</div>`)[0];
+            popup_f5eba19f954146a4838d5c077b74ad8d.setContent(html_d57ff6834ee446c38d0db0bd9e6b4528);
+        
+
+        circle_dad11a4e5a7948949060adf65bf4ea57.bindPopup(popup_f5eba19f954146a4838d5c077b74ad8d)
+        ;
+
+        
+    
+    
+            var circle_2400492a19e14a4dbff9de964d368de1 = L.circle(
+                [30.585164000000002, 36.238414],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43399.200000000004, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_9ac168e2cdaf4ad4a0336980d8d95987 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de930d4a16904cf6b193bccefcda0cb1 = $(`<div id="html_de930d4a16904cf6b193bccefcda0cb1" style="width: 100.0%; height: 100.0%;">['Jordan Asylum(pending): 33384.0']</div>`)[0];
+            popup_9ac168e2cdaf4ad4a0336980d8d95987.setContent(html_de930d4a16904cf6b193bccefcda0cb1);
+        
+
+        circle_2400492a19e14a4dbff9de964d368de1.bindPopup(popup_9ac168e2cdaf4ad4a0336980d8d95987)
+        ;
+
+        
+    
+    
+            var circle_30f35f02f32d405a99c7759ee3be7303 = L.circle(
+                [9.145, 40.489672999999996],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 261580.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_f62d6258aad24e98ac7cd81341068735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae90c84e83a143ff86c12c6527d3e1cc = $(`<div id="html_ae90c84e83a143ff86c12c6527d3e1cc" style="width: 100.0%; height: 100.0%;">['Ethiopia IDPs: 2615800.0']</div>`)[0];
+            popup_f62d6258aad24e98ac7cd81341068735.setContent(html_ae90c84e83a143ff86c12c6527d3e1cc);
+        
+
+        circle_30f35f02f32d405a99c7759ee3be7303.bindPopup(popup_f62d6258aad24e98ac7cd81341068735)
+        ;
+
+        
+    
+    
+            var circle_0087b23938164d33b83d777ab4450f38 = L.circle(
+                [51.165690999999995, 10.451526],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 106413.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_6f35ce7a1b63453380a99227fdd85e12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70e32b266bdb468eba381c645e473899 = $(`<div id="html_70e32b266bdb468eba381c645e473899" style="width: 100.0%; height: 100.0%;">['Germany Refugees: 532065.0']</div>`)[0];
+            popup_6f35ce7a1b63453380a99227fdd85e12.setContent(html_70e32b266bdb468eba381c645e473899);
+        
+
+        circle_0087b23938164d33b83d777ab4450f38.bindPopup(popup_6f35ce7a1b63453380a99227fdd85e12)
+        ;
+
+        
+    
+    
+            var circle_56326851c6f94483bd038c2fd5cb1fd5 = L.circle(
+                [26.3351, 17.228331],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30124.9, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_484d5ab157eb4d6a82f31bef928ceb2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf99022c4ea34bf8a6658091b19857ee = $(`<div id="html_bf99022c4ea34bf8a6658091b19857ee" style="width: 100.0%; height: 100.0%;">['Libya Asylum(pending): 23173.0']</div>`)[0];
+            popup_484d5ab157eb4d6a82f31bef928ceb2d.setContent(html_bf99022c4ea34bf8a6658091b19857ee);
+        
+
+        circle_56326851c6f94483bd038c2fd5cb1fd5.bindPopup(popup_484d5ab157eb4d6a82f31bef928ceb2d)
+        ;
+
+        
+    
+    
+            var circle_f2ec795caad949f1ab091e9275967edc = L.circle(
+                [9.081999, 8.675277000000001],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 216792.40000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_16d2587a59e64e8981b616cfd0a9ee05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c97e8ab830f4c1683e98aa90d52d7c7 = $(`<div id="html_9c97e8ab830f4c1683e98aa90d52d7c7" style="width: 100.0%; height: 100.0%;">['Nigeria IDPs: 2167924.0']</div>`)[0];
+            popup_16d2587a59e64e8981b616cfd0a9ee05.setContent(html_9c97e8ab830f4c1683e98aa90d52d7c7);
+        
+
+        circle_f2ec795caad949f1ab091e9275967edc.bindPopup(popup_16d2587a59e64e8981b616cfd0a9ee05)
+        ;
+
+        
+    
+    
+            var circle_c8b25a477c4343bca305671293b937c2 = L.circle(
+                [32.427908, 53.68804599999999],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 190228.40000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_af81388438ef4e33be3b58ae22f7e170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62b6dc47298d48e4aa9e560bc3359481 = $(`<div id="html_62b6dc47298d48e4aa9e560bc3359481" style="width: 100.0%; height: 100.0%;">['Iran (Islamic Rep. of) Refugees: 951142.0']</div>`)[0];
+            popup_af81388438ef4e33be3b58ae22f7e170.setContent(html_62b6dc47298d48e4aa9e560bc3359481);
+        
+
+        circle_c8b25a477c4343bca305671293b937c2.bindPopup(popup_af81388438ef4e33be3b58ae22f7e170)
+        ;
+
+        
+    
+    
+            var circle_43ce83964aaa4b2c956a5a445e127075 = L.circle(
+                [4.210483999999999, 101.97576600000001],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34382.4, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_97b80ddc966e47f2b1561f1497b834ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28094c13fa4a41859fb14aa48097ceab = $(`<div id="html_28094c13fa4a41859fb14aa48097ceab" style="width: 100.0%; height: 100.0%;">['Malaysia Asylum(pending): 26448.0']</div>`)[0];
+            popup_97b80ddc966e47f2b1561f1497b834ea.setContent(html_28094c13fa4a41859fb14aa48097ceab);
+        
+
+        circle_43ce83964aaa4b2c956a5a445e127075.bindPopup(popup_97b80ddc966e47f2b1561f1497b834ea)
+        ;
+
+        
+    
+    
+            var circle_bd6ab2d98e7845f3be79a94e3eea5f6b = L.circle(
+                [15.552726999999999, 48.516388],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 214471.80000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_dff6cc6412e24aa79e2b0cd8b9b6226e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_390060454a474147b2b524a5568a069d = $(`<div id="html_390060454a474147b2b524a5568a069d" style="width: 100.0%; height: 100.0%;">['Yemen IDPs: 2144718.0']</div>`)[0];
+            popup_dff6cc6412e24aa79e2b0cd8b9b6226e.setContent(html_390060454a474147b2b524a5568a069d);
+        
+
+        circle_bd6ab2d98e7845f3be79a94e3eea5f6b.bindPopup(popup_dff6cc6412e24aa79e2b0cd8b9b6226e)
+        ;
+
+        
+    
+    
+            var circle_d189e272e85a4144a1fb7db512f37887 = L.circle(
+                [30.585164000000002, 36.238414],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 135256.6, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_72b964017259479aa9aa9936ac880140 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_265064042f284b90ab29818de4bcfd4b = $(`<div id="html_265064042f284b90ab29818de4bcfd4b" style="width: 100.0%; height: 100.0%;">['Jordan Refugees: 676283.0']</div>`)[0];
+            popup_72b964017259479aa9aa9936ac880140.setContent(html_265064042f284b90ab29818de4bcfd4b);
+        
+
+        circle_d189e272e85a4144a1fb7db512f37887.bindPopup(popup_72b964017259479aa9aa9936ac880140)
+        ;
+
+        
+    
+    
+            var circle_ee3c1ac4ff37445b8fe29dfda2350894 = L.circle(
+                [-9.189967, -75.015152],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 295522.5, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_513536c288c34906b4762abd488da2ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41dfaa393ecc46d8a470ada7f26368ac = $(`<div id="html_41dfaa393ecc46d8a470ada7f26368ac" style="width: 100.0%; height: 100.0%;">['Peru Asylum(pending): 227325.0']</div>`)[0];
+            popup_513536c288c34906b4762abd488da2ea.setContent(html_41dfaa393ecc46d8a470ada7f26368ac);
+        
+
+        circle_ee3c1ac4ff37445b8fe29dfda2350894.bindPopup(popup_513536c288c34906b4762abd488da2ea)
+        ;
+
+        
+    
+    
+            var circle_70d58d2e30cd42a1abfc4f61bb1c4a9d = L.circle(
+                [33.93911, 67.709953],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 210689.30000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_0d241f8659db4a60acb6b4e43f4b3aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6a52ef2102147a982a73a392716143a = $(`<div id="html_e6a52ef2102147a982a73a392716143a" style="width: 100.0%; height: 100.0%;">['Afghanistan IDPs: 2106893.0']</div>`)[0];
+            popup_0d241f8659db4a60acb6b4e43f4b3aa3.setContent(html_e6a52ef2102147a982a73a392716143a);
+        
+
+        circle_70d58d2e30cd42a1abfc4f61bb1c4a9d.bindPopup(popup_0d241f8659db4a60acb6b4e43f4b3aa3)
+        ;
+
+        
+    
+    
+            var circle_ec4d94803a0b49dcbcb07a047110075f = L.circle(
+                [33.854721000000005, 35.862285],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 188836.2, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_26b09e4de6a4460da37c54910e6dbb05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efcacdae405b4054b4255cef1fc78f9e = $(`<div id="html_efcacdae405b4054b4255cef1fc78f9e" style="width: 100.0%; height: 100.0%;">['Lebanon Refugees: 944181.0']</div>`)[0];
+            popup_26b09e4de6a4460da37c54910e6dbb05.setContent(html_efcacdae405b4054b4255cef1fc78f9e);
+        
+
+        circle_ec4d94803a0b49dcbcb07a047110075f.bindPopup(popup_26b09e4de6a4460da37c54910e6dbb05)
+        ;
+
+        
+    
+    
+            var circle_f9d4d55deba042d7ae0d370e1dd52205 = L.circle(
+                [-30.559482, 22.937506],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 98511.40000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_d5688cb2208e45b792d6e89301cba3a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_023cc51df82747fca77c004e26b41d04 = $(`<div id="html_023cc51df82747fca77c004e26b41d04" style="width: 100.0%; height: 100.0%;">['South Africa Asylum(pending): 75778.0']</div>`)[0];
+            popup_d5688cb2208e45b792d6e89301cba3a4.setContent(html_023cc51df82747fca77c004e26b41d04);
+        
+
+        circle_f9d4d55deba042d7ae0d370e1dd52205.bindPopup(popup_d5688cb2208e45b792d6e89301cba3a4)
+        ;
+
+        
+    
+    
+            var circle_cb0eaa470b6045319effd21bbe24bbe0 = L.circle(
+                [12.862807, 30.217636],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 187815.30000000002, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_5dbd7ab14dfc431db95b06816b0f3321 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce17e53ca3194c499b286b5d6ec2f600 = $(`<div id="html_ce17e53ca3194c499b286b5d6ec2f600" style="width: 100.0%; height: 100.0%;">['South Sudan IDPs: 1878153.0']</div>`)[0];
+            popup_5dbd7ab14dfc431db95b06816b0f3321.setContent(html_ce17e53ca3194c499b286b5d6ec2f600);
+        
+
+        circle_cb0eaa470b6045319effd21bbe24bbe0.bindPopup(popup_5dbd7ab14dfc431db95b06816b0f3321)
+        ;
+
+        
+    
+    
+            var circle_a7a5762e851e4b54bd9e93d59ad38e40 = L.circle(
+                [30.375321000000003, 69.345116],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 280704.2, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_e2a548ddabc14117aba0b843d01716e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dcad609264c4fc7924081f3ddaf9410 = $(`<div id="html_9dcad609264c4fc7924081f3ddaf9410" style="width: 100.0%; height: 100.0%;">['Pakistan Refugees: 1403521.0']</div>`)[0];
+            popup_e2a548ddabc14117aba0b843d01716e2.setContent(html_9dcad609264c4fc7924081f3ddaf9410);
+        
+
+        circle_a7a5762e851e4b54bd9e93d59ad38e40.bindPopup(popup_e2a548ddabc14117aba0b843d01716e2)
+        ;
+
+        
+    
+    
+            var circle_a29d6fdec1304d7e84d6c5aa1eb7f457 = L.circle(
+                [40.463667, -3.7492199999999998],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41106.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_a9d7d78b973b42b9b5dfc875712b7433 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2f07c1b03ed459ebce48aaba95d27b9 = $(`<div id="html_b2f07c1b03ed459ebce48aaba95d27b9" style="width: 100.0%; height: 100.0%;">['Spain Asylum(pending): 31620.0']</div>`)[0];
+            popup_a9d7d78b973b42b9b5dfc875712b7433.setContent(html_b2f07c1b03ed459ebce48aaba95d27b9);
+        
+
+        circle_a29d6fdec1304d7e84d6c5aa1eb7f457.bindPopup(popup_a9d7d78b973b42b9b5dfc875712b7433)
+        ;
+
+        
+    
+    
+            var circle_fb95a12f6c754272914246a8c3803698 = L.circle(
+                [33.223191, 43.679291],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180283.2, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_67614d41c80b4c4a85021e09f563ba51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a19d3a95ccda4a95910868972e7fa6f5 = $(`<div id="html_a19d3a95ccda4a95910868972e7fa6f5" style="width: 100.0%; height: 100.0%;">['Iraq IDPs: 1802832.0']</div>`)[0];
+            popup_67614d41c80b4c4a85021e09f563ba51.setContent(html_a19d3a95ccda4a95910868972e7fa6f5);
+        
+
+        circle_fb95a12f6c754272914246a8c3803698.bindPopup(popup_67614d41c80b4c4a85021e09f563ba51)
+        ;
+
+        
+    
+    
+            var circle_83be97ffcc8448b1b5b517574091b2b6 = L.circle(
+                [38.963745, 35.243322],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 724473.2000000001, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_099b2d08baae4a82abbca775550d9627 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16495283b0df407bafeee62d5954ab2b = $(`<div id="html_16495283b0df407bafeee62d5954ab2b" style="width: 100.0%; height: 100.0%;">['Turkey Refugees: 3622366.0']</div>`)[0];
+            popup_099b2d08baae4a82abbca775550d9627.setContent(html_16495283b0df407bafeee62d5954ab2b);
+        
+
+        circle_83be97ffcc8448b1b5b517574091b2b6.bindPopup(popup_099b2d08baae4a82abbca775550d9627)
+        ;
+
+        
+    
+    
+            var circle_0abc7ef12e064df0bfbef40d1a63a930 = L.circle(
+                [38.963745, 35.243322],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 388754.60000000003, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_64deeafdc98c4a1ebb4b925c725abae6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35099f8a0ae0465cbd4cc2fd07facc47 = $(`<div id="html_35099f8a0ae0465cbd4cc2fd07facc47" style="width: 100.0%; height: 100.0%;">['Turkey Asylum(pending): 299042.0']</div>`)[0];
+            popup_64deeafdc98c4a1ebb4b925c725abae6.setContent(html_35099f8a0ae0465cbd4cc2fd07facc47);
+        
+
+        circle_0abc7ef12e064df0bfbef40d1a63a930.bindPopup(popup_64deeafdc98c4a1ebb4b925c725abae6)
+        ;
+
+        
+    
+    
+            var circle_3985fb301c344567b1cb827c2d44a3f2 = L.circle(
+                [48.379433, 31.16558],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150000.0, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_c9bdabb7d86b4cf69b4baeb3ffeb982b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7b6cdac57884239b7ced52f8ff17f57 = $(`<div id="html_c7b6cdac57884239b7ced52f8ff17f57" style="width: 100.0%; height: 100.0%;">['Ukraine IDPs: 1500000.0']</div>`)[0];
+            popup_c9bdabb7d86b4cf69b4baeb3ffeb982b.setContent(html_c7b6cdac57884239b7ced52f8ff17f57);
+        
+
+        circle_3985fb301c344567b1cb827c2d44a3f2.bindPopup(popup_c9bdabb7d86b4cf69b4baeb3ffeb982b)
+        ;
+
+        
+    
+    
+            var circle_06a23d2e33f545669e9ee9a68a48b111 = L.circle(
+                [1.373333, 32.290275],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 157769.6, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_b250d390694a4cf29a030b2ff3c6803f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96075b19bd4c4cfb9e8404c1e5e9018e = $(`<div id="html_96075b19bd4c4cfb9e8404c1e5e9018e" style="width: 100.0%; height: 100.0%;">['Uganda Refugees: 788848.0']</div>`)[0];
+            popup_b250d390694a4cf29a030b2ff3c6803f.setContent(html_96075b19bd4c4cfb9e8404c1e5e9018e);
+        
+
+        circle_06a23d2e33f545669e9ee9a68a48b111.bindPopup(popup_b250d390694a4cf29a030b2ff3c6803f)
+        ;
+
+        
+    
+    
+            var circle_1ae369efc82b42d0baa50147edc61e8e = L.circle(
+                [37.09024, -95.712891],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 661324.3, "stroke": true, "weight": 3}
+            ).addTo(map_1514e41ab7824e83857d1ab0e38e718b);
+        
+    
+        var popup_d45a9248e0e64b60a09f03c6bc775f6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_213c6d16d38444068fca35ebee4a08ec = $(`<div id="html_213c6d16d38444068fca35ebee4a08ec" style="width: 100.0%; height: 100.0%;">['United States of America Asylum(pending): 508711.0']</div>`)[0];
+            popup_d45a9248e0e64b60a09f03c6bc775f6c.setContent(html_213c6d16d38444068fca35ebee4a08ec);
+        
+
+        circle_1ae369efc82b42d0baa50147edc61e8e.bindPopup(popup_d45a9248e0e64b60a09f03c6bc775f6c)
+        ;
+
+        
+    
+</script>

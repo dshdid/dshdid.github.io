@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4db1cd29ad864c2687c7285b3d8acc8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:20px"><b>The top 10 countries of origin who applied for asylum in 2018</b></h3>
+             
+    
+            <div class="folium-map" id="map_4db1cd29ad864c2687c7285b3d8acc8c" ></div>
+        
+</body>
+<script>    
+    
+            var map_4db1cd29ad864c2687c7285b3d8acc8c = L.map(
+                "map_4db1cd29ad864c2687c7285b3d8acc8c",
+                {
+                    center: [15.0, -11.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7a7bd36199a749ba9dfce804f3b1897a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+            var circle_b6d2997d22834301897291311044a3f6 = L.circle(
+                [6.42375, -66.58973],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 697580.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_d053a7d6ee2543f6a14c23b95d7526db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee69fd36545f4c37884673533842cc7a = $(`<div id="html_ee69fd36545f4c37884673533842cc7a" style="width: 100.0%; height: 100.0%;">Venezuela (Bolivarian Republic of)</div>`)[0];
+            popup_d053a7d6ee2543f6a14c23b95d7526db.setContent(html_ee69fd36545f4c37884673533842cc7a);
+        
+
+        circle_b6d2997d22834301897291311044a3f6.bindPopup(popup_d053a7d6ee2543f6a14c23b95d7526db)
+        ;
+
+        
+    
+    
+            var circle_7f8282f7eaab45428505163674a545e9 = L.circle(
+                [33.93911, 67.709953],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 277798.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_2027ad8e3e7642f7aabc85ded29d6094 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75430ef209c14ca6b392742f9d404d93 = $(`<div id="html_75430ef209c14ca6b392742f9d404d93" style="width: 100.0%; height: 100.0%;">Afghanistan</div>`)[0];
+            popup_2027ad8e3e7642f7aabc85ded29d6094.setContent(html_75430ef209c14ca6b392742f9d404d93);
+        
+
+        circle_7f8282f7eaab45428505163674a545e9.bindPopup(popup_2027ad8e3e7642f7aabc85ded29d6094)
+        ;
+
+        
+    
+    
+            var circle_9a27ac5caa0c40aa9cd0be8cb4960e64 = L.circle(
+                [34.802075, 38.996815000000005],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 252142.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_ea7c4f333f594c539e30f74ed0af4bc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7301d930b46452394b70a0c67501f78 = $(`<div id="html_a7301d930b46452394b70a0c67501f78" style="width: 100.0%; height: 100.0%;">Syrian Arab Rep.</div>`)[0];
+            popup_ea7c4f333f594c539e30f74ed0af4bc1.setContent(html_a7301d930b46452394b70a0c67501f78);
+        
+
+        circle_9a27ac5caa0c40aa9cd0be8cb4960e64.bindPopup(popup_ea7c4f333f594c539e30f74ed0af4bc1)
+        ;
+
+        
+    
+    
+            var circle_cb70e38269b844f9bb803f7335250510 = L.circle(
+                [33.223191, 43.679291],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 199396.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_a9a626b1ea144eab9164e5de0b5ff0f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a047aec3717a49e39923a28fe376124a = $(`<div id="html_a047aec3717a49e39923a28fe376124a" style="width: 100.0%; height: 100.0%;">Iraq</div>`)[0];
+            popup_a9a626b1ea144eab9164e5de0b5ff0f7.setContent(html_a047aec3717a49e39923a28fe376124a);
+        
+
+        circle_cb70e38269b844f9bb803f7335250510.bindPopup(popup_a9a626b1ea144eab9164e5de0b5ff0f7)
+        ;
+
+        
+    
+    
+            var circle_ff58ca0a0d9945ea8bfb4ea7cd9edb15 = L.circle(
+                [9.081999, 8.675277000000001],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 119352.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_93cc13034fc244dd95ec183e8e27d96f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33c980a0f0914dcdb1687dad9f37a591 = $(`<div id="html_33c980a0f0914dcdb1687dad9f37a591" style="width: 100.0%; height: 100.0%;">Nigeria</div>`)[0];
+            popup_93cc13034fc244dd95ec183e8e27d96f.setContent(html_33c980a0f0914dcdb1687dad9f37a591);
+        
+
+        circle_ff58ca0a0d9945ea8bfb4ea7cd9edb15.bindPopup(popup_93cc13034fc244dd95ec183e8e27d96f)
+        ;
+
+        
+    
+    
+            var circle_4f7c398e8aca4f56ba59aa71a04f5709 = L.circle(
+                [30.375321000000003, 69.345116],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 108898.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_f8f940aeaef34bc1a2ecfec3804ba60e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afc9fd96abbf4b95be6e8780c9781e45 = $(`<div id="html_afc9fd96abbf4b95be6e8780c9781e45" style="width: 100.0%; height: 100.0%;">Pakistan</div>`)[0];
+            popup_f8f940aeaef34bc1a2ecfec3804ba60e.setContent(html_afc9fd96abbf4b95be6e8780c9781e45);
+        
+
+        circle_4f7c398e8aca4f56ba59aa71a04f5709.bindPopup(popup_f8f940aeaef34bc1a2ecfec3804ba60e)
+        ;
+
+        
+    
+    
+            var circle_2e64d4a6c94f45c1a8d4fed233c1e999 = L.circle(
+                [32.427908, 53.68804599999999],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 102746.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_149566fdf916443ba4f9e3151b5e6304 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70bce253883f4ecdaa62d70dbce2e9e9 = $(`<div id="html_70bce253883f4ecdaa62d70dbce2e9e9" style="width: 100.0%; height: 100.0%;">Iran (Islamic Rep. of)</div>`)[0];
+            popup_149566fdf916443ba4f9e3151b5e6304.setContent(html_70bce253883f4ecdaa62d70dbce2e9e9);
+        
+
+        circle_2e64d4a6c94f45c1a8d4fed233c1e999.bindPopup(popup_149566fdf916443ba4f9e3151b5e6304)
+        ;
+
+        
+    
+    
+            var circle_75140e4cc6ab4dd49407c07dec96e22f = L.circle(
+                [13.794185, -88.89653],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 99868.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_360ad6f12d4b47e6bc3a5fc90d39ce30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc1db9d63a8400b842a731a339fd45b = $(`<div id="html_cfc1db9d63a8400b842a731a339fd45b" style="width: 100.0%; height: 100.0%;">El Salvador</div>`)[0];
+            popup_360ad6f12d4b47e6bc3a5fc90d39ce30.setContent(html_cfc1db9d63a8400b842a731a339fd45b);
+        
+
+        circle_75140e4cc6ab4dd49407c07dec96e22f.bindPopup(popup_360ad6f12d4b47e6bc3a5fc90d39ce30)
+        ;
+
+        
+    
+    
+            var circle_514d8b9506b5477ba8e23ef4f842e329 = L.circle(
+                [15.179383999999999, 39.782334000000006],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 91432.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_67c077c84450469186ad3a4c83a06397 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f57d300c7164747a124e0391db2f616 = $(`<div id="html_9f57d300c7164747a124e0391db2f616" style="width: 100.0%; height: 100.0%;">Eritrea</div>`)[0];
+            popup_67c077c84450469186ad3a4c83a06397.setContent(html_9f57d300c7164747a124e0391db2f616);
+        
+
+        circle_514d8b9506b5477ba8e23ef4f842e329.bindPopup(popup_67c077c84450469186ad3a4c83a06397)
+        ;
+
+        
+    
+    
+            var circle_8c4b14d4598d4c949326f6e84b0cc427 = L.circle(
+                [15.199998999999998, -86.241905],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 86756.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db1cd29ad864c2687c7285b3d8acc8c);
+        
+    
+        var popup_13168f3614eb466c8a8a90a9bc17a90f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_012ecba143974c98aed54021257263bc = $(`<div id="html_012ecba143974c98aed54021257263bc" style="width: 100.0%; height: 100.0%;">Honduras</div>`)[0];
+            popup_13168f3614eb466c8a8a90a9bc17a90f.setContent(html_012ecba143974c98aed54021257263bc);
+        
+
+        circle_8c4b14d4598d4c949326f6e84b0cc427.bindPopup(popup_13168f3614eb466c8a8a90a9bc17a90f)
+        ;
+
+        
+    
+</script>

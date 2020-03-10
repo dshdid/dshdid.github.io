@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Asylum seekers, refugee status</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">UNHCR Data</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
+            >
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">UNHCR Population of concern</div>
+                            <a class="nav-link" href="index.html"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                UNHCR Introducation</a>
+                            <div class="sb-sidenav-menu-heading">Data</div>
+                            <a class="nav-link" href="charts.html"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Time Series</a
+                            ><a class="nav-link" href="charts1.html"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Asylum seekers, refugee status </a
+                            ><a class="nav-link" href="charts2.html"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Persons of Concern </a
+                            >
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Made for:</div>
+                        Data Visualization course
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Asylum seekers</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">UNHCR</a></li>
+                            <li class="breadcrumb-item active">Asylum seekers, refugee status</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body"><a href="http://popstats.unhcr.org/en/asylum_seekers"> => Data source: </a>This page presents information about asylum applications in a given year and the progress of asylum-seekers through the refugee status determination process. Such data is available since 2000.</div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-chart-area"></i> Map of the top 10 countries of origin who applied for asylum in 2018</div>
+                            <div class="card-body" ><p><iframe src="10_origins_2018.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-chart-bar mr-1"></i> Bar Chart of the top 10 countries of origin who applied for asylum in 2018, with the rejection rate.</div>
+                            <div class="card-body" ><p><iframe src="10_origin_bar_2018.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                    
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-chart-area "></i> Bar Chart of the top 10 countries of origin who applied for asylum in 2017, with the rejection rate.</div>
+                            <div class="card-body" ><p><iframe src="10_origin_bar_2017.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">After comparing the demand of asylum in the world in 2018 and 2017 for the top 10 origins, we can conclude the following:
+                                <div style="padding: 2em;">
+                                <li>
+                                For Irak, Syria, and Afghanstan the demand stayed relatively the same, which can be explained with the continuity of deterioration of their home countries.</li>
+                                <li>For Venezuela, the demand has doubled in 2018, which can of course be explained by the increase of violence, insecurity, the deteriorating political, socioeconomic and human rights conditions. The high rejection rate is due to the fact that Venezuela is situated in a region where the asylum procedure are overwhelemed.</li>
+                            </div>
+                            </div>
+                        </div>
+                        <p><h2>Visualizing the top 3 countries of Origin:</h2></p>
+                        <p><h5>After the first analysis, the top three countries are Syria, Venezuela and Afghanstan:</h5></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-tachometer-alt"></i> Top 5 destinations for asylum by the top 3 origins in 2018</div>
+                            <div class="card-body" ><p><iframe src="5_dest_per_top_3.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-tachometer-alt"></i> Top 5 destinations for asylum by the top 3 origins in 2018</div>
+                            <div class="card-body" ><p><img src="destination_3.png"  width="100%" height="600"></p></div>
+                        </div>
+                    </div>
+                </div>
+                        <p><h5>The civil war in Syria is the most talked about war for the last 8 years, let's see where the Syrian asylum seekers went:</h5></p>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-tachometer-alt"></i> Top 5 destinations for asylum by the top 3 origins in 2018</div>
+                            <div class="card-body" ><p><iframe src="syrian_seekers_time.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-tachometer-alt"></i> Top 5 destinations for asylum by the top 3 origins in 2018</div>
+                            <div class="card-body" ><p><iframe src="syrian_seekers_time_map.html" width="100%" height="600">Alternate content</iframe></p></div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">Looking at these figures that shows the number of syrian asylum seekers around the world in the last 18 years. we can clearly see that the number skyrocketed in 2015, in the peek of the syrian civil war. And that the most desirable country for syrian was Germany with a high of 266k people in 2016.
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Made by Dona CHADID</div>
+                            <div class="text-muted">Made for:
+                                Data Visualization course </div>
+                            <div>
+                                <a href="#">EFREI Paris</a>
+                                &middot;
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="assets/demo/chart-pie-demo.js"></script>
+    </body>
+</html>
